@@ -5,3 +5,5 @@ for e in lst:
         print('The reciprocal of {} is {}'.format(e , 1 / e));
     else:
         print('The {} has no reciprocal.'.format(e));
+
+x = 2; # a useless variable
