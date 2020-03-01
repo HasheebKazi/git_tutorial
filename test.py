@@ -1,6 +1,6 @@
 import unittest
 
-import mainapp
+import my_functions
 
 class TestMyFunc(unittest.TestCase):
 
@@ -8,13 +8,13 @@ class TestMyFunc(unittest.TestCase):
         pass
 
     def test_increment_one_1(self):
-        self.assertEqual( mainapp.increment_by_one(1), 2)
+        self.assertEqual( my_functions.increment_by_one(1), 2)
 
     def test_increment_one_2(self):
-        self.assertEqual( mainapp.increment_by_one(0), 1)
+        self.assertEqual( my_functions.increment_by_one(0), 1)
 
-#    def test_increment_two(self):
-#        self.assertEqual( mainapp.increment_by_two(0), 2)
+    def test_increment_two(self):
+        self.assertEqual( my_functions.increment_by_two(0), 2)
 
 if __name__ == '__main__':
     unittest.main()
